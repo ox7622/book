@@ -1,0 +1,98 @@
+.book {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.book__nav {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.book__content {
+    transition: width 0.3s ease-in-out;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.book__content_full {
+    width: 95%;
+    transition: width 0.3s ease-in-out;
+}
+
+.book__page {
+    background-color: lightgray;
+    height: 74vh;
+    box-sizing: border-box;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+.button__next {
+    background-image: url('../../images/arrow.png');
+    width: 30px;
+    height: 30px;
+
+    background-color: transparent;
+    border: 0;
+    background-position: center center;
+    background-size: contain;
+}
+
+
+.button__previous {
+    background-image: url('../../images/arrow.png');
+    transform: rotate(180deg);
+    width: 30px;
+    height: 30px;
+
+    background-color: transparent;
+    border: 0;
+    background-position: center center;
+    background-size: contain;
+}
+
+.page-num {
+    width: 30px;
+}
+
+.nav__close {
+    background-image: url('../../images/next.png');
+    width: 30px;
+    height: 30px;
+    justify-self: right;
+    background-color: transparent;
+    border: 0;
+    background-position: center center;
+    background-size: contain;
+    align-self: end;
+}
+
+.nav__close_opened {
+    background-image: url('../../images/left.png');
+}
+
+.book__nav_closed {
+    transition: width 0.3s ease-in-out;
+    width: 5%;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.hidden {
+    visibility: hidden;
+}
